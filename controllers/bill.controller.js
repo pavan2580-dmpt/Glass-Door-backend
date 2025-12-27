@@ -144,8 +144,11 @@ exports.list = async (req, res) => {
           },
           total: { $first: "$total" },
           billNo: { $first: "$billNo" },
+          
           createdAt: { $first: "$createdAt" },
           updatedAt: { $first: "$updatedAt" },
+          customerName: { $first: "$customerName" },
+          city: { $first: "$city" },
         },
       },
       {
