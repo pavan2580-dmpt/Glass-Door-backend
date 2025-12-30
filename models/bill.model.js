@@ -11,12 +11,25 @@ const billSchema = new mongoose.Schema({
         quantity: {
             type: Number,
             required: true
+        },
+        price:{
+            type:Number,
+            required:true
         }
     }],
     total: {
         type: Number
     },
     billNo: {
+        type: String
+    },
+    customerName: {
+        type: String
+    },
+    city: {
+        type: String
+    },
+    phoneNumber: {
         type: String
     }
 }, {
